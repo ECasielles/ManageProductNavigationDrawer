@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.content_navigation);
         multiListProductFragment = new MultiListProductFragment();
         getSupportFragmentManager().beginTransaction().
                 add(R.id.framehome, multiListProductFragment).commit();

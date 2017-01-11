@@ -5,4 +5,9 @@
     <dimen name="widget_margin_top">25dp</dimen>
     <dimen name="widgetTextViewWidth">100dp</dimen>
     <dimen name="fabtnAdd">430dp</dimen>
+
+    <dimen name="header_left_padding">16dp</dimen>
+    <dimen name="header_height">192dp</dimen>
+
+    <dimen name="profile_image_size">64dp</dimen>
 </resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/actionHome"
+            android:icon="@drawable/menu_home"
+            android:title="Inicio"
+            />
+        <item
+            android:id="@+id/actionProducts"
+            android:icon="@drawable/menu_products"
+            android:title="Productos"
+            />
+        <item
+            android:id="@+id/actionPharma"
+            android:icon="@drawable/pill"
+            android:title="Farmacia"
+            />
+        <item
+            android:id="@+id/actionSale"
+            android:icon="@drawable/menu_sales"
+            android:title="Venta"
+            />
+    </group>
+    <!--para hacer un grupo secundario ponemos un item-->
+    <!--bajo el grupo-->
+    <item
+        android:id="@+id/navigationSubheader"
+        android:title="Configuración"
+        >
+        <menu>
+            <item
+                android:id="@+id/actionHelp"
+                android:icon="@drawable/menu_help"
+                android:title="Ayuda"
+                />
+            <item
+                android:id="@+id/actionConfig"
+                android:icon="@drawable/menu_config"
+                android:title="Configuración"
+                />
+        </menu>
+    </item>
+</menu>
