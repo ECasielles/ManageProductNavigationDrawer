@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ManageProductsDatabase</string>
+    <string name="action_add_product">Nuevo producto</string>
+    <string name="action_delete_product">Eliminar producto</string>
+    <string name="action_sort_alphabetically">Ordenar</string>
+    <string name="action_settings_general">Opciones</string>
+    <string name="action_sattings_account">Configuración</string>
+    <string name="isCompany">¿Empresa o particular?</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="username">Usuario</string>
+    <string name="chbEmailNotification">Recibir actualizaciones en mi correo</string>
+    <string name="acceptTerms">Acepto los términos y condiciones de uso</string>
+    <string name="ok">Ok</string>
+    <string name="client">Cliente</string>
+    <string name="company">Empresa</string>
+    <string name="businessName">Empresa</string>
+    <string name="messageCityCounty">Ha seleccionado %1$s (%2$s)</string>
+    <string name="manageName">Nombre</string>
+    <string name="manageDetails">Descripción</string>
+    <string name="manageDose">Dosis</string>
+    <string name="manageBrand">Marca</string>
+    <string name="managePrice">Precio</string>
+    <string name="manageOk">Confirmar</string>
+    <string name="manageStock">Existencias</string>
+    <string name="nodata">No hay datos para mostrar</string>
+    <string name="no">No</string>
+    <string name="yes">Si</string>
+    <string name="delete_product">¿Desea eliminar el elemento seleccionado?</string>
+    <string name="delete">Eliminar</string>
+</resources>

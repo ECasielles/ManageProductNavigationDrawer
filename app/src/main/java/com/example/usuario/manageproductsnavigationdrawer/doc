@@ -1,0 +1,44 @@
+
+Todos los Fragment van a tener ambos un presentador.
+¿Por qué presentador y no controlador?
+El controlador no tiene un objeto de la vista y no
+puede actualizar la vista fácilmente
+
+El código de los Fragment será ahora más básico,
+y lo demás lo va a hacer el presentador, que se va
+a conectar al repositorio (clase intermedia que va a
+comunicarse con el DAO, conexión a lo que sea, desde
+clases para gestionar conexiones de red, JSON, XML, etc.)
+y ahí tendrá lugar la traducción.
+El dao se buscará la vida para dárselo al presentador, que
+será el encargado de pedir la información y cargarlos en
+la vista.
+
+El adapter tendrá un método load que cargue los datos a la
+vista y la vista tomará los datos y los mostrará.
+
+¿Es bueno tener una actividad y el resto Fragment? Sí
+La historia está en que la activdad tendrá todos los Fragment
+y todos los presentadores, pero eso no es cierto.
+
+La actividad tendrá tantos métodos como fragmentos que visualizar,
+que tendrán cada uno su objeto presenter. Para ello requiere
+una lista de fragmentos.
+
+Otra gente opina que se pueden tener varias actividades
+según el tipo de dato que se muestra.
+
+Esto se basa en que lo más pesado de cargar debe ir en fragment
+y se libera a la actividad de cualquier tipo de dato asíncrono.
+
+Recordar que el presentador sólo hará lo que pueda hacer la vista.
+
+Sólo se trabaja con un objeto repositorio para tener sólo
+una conexión a base de datos.
+
+Cambiar algo en la actividad sólo requerirá cambiar los
+métodos de la interfaz que implemente.
+
+El presentador puede necesitar el contexto de la actividad, por lo que
+no siempre podremos seguir el modelo vista presentador.
+--------------------

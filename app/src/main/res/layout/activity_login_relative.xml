@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.usuario.manageproductsnavigationdrawer.activity.LoginActivity">
+
+    <ImageView
+        app:srcCompat="@drawable/cruz"
+        android:id="@+id/imvLoginImage"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilLoginUser"
+        android:layout_below="@id/imvLoginImage"
+        android:layout_marginTop="20dp"
+        app:errorEnabled="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtUserLogin"
+            android:hint="Introduzca nombre" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilLoginPassword"
+        android:layout_below="@id/tilLoginUser"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:counterMaxLength="20">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_below="@id/edtUserLogin"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edtUserPasswordLogin"
+            android:inputType="textPassword"
+            android:hint="Introduzca contraseña"
+            android:maxLength="20" />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chb_remember"
+        android:layout_below="@id/tilLoginPassword"
+        android:text="Recordar usuario"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilLoginPassword"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoginOk"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:text="Sign Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignupLogin"
+            android:backgroundTint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</RelativeLayout>
